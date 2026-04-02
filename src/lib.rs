@@ -333,7 +333,7 @@ where
     }
 
     // internal constructor, users should call ::from_pins or ::from_spi
-    fn new(connector: CONNECTOR) -> Result<Self, DataError> {
+    pub fn new(connector: CONNECTOR) -> Result<Self, DataError> {
         let mut max7219 = MAX7219 {
             c: connector,
             decode_mode: DecodeMode::NoDecode,
