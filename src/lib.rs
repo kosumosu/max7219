@@ -15,7 +15,7 @@ pub mod connectors;
 use connectors::*;
 
 /// Maximum number of displays connected in series supported by this lib.
-const MAX_DISPLAYS: usize = 8;
+const MAX_DISPLAYS: usize = 32;
 
 /// Digits per display
 const MAX_DIGITS: usize = 8;
